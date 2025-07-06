@@ -17,11 +17,11 @@ export const handler = async (event) => {
   
     // modelo bff 
     const bffUserData = {
-      UserID: user.userID,
-      name: user.name,
-      UserTypeId: user.userTypeId,
-      UserSubTypeId: user.userSubTypeId,
-      Status: user.status
+        name: user.nickname,
+        status: user.status,
+        userTypeId: user.userTypeId,
+        userSubTypeId: user.userSubTypeId,
+        userID: user.userID
     };
   
     const endpoint = 'http://certichaindata.ddns.net:8083/api/userdata';
